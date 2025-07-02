@@ -5,7 +5,7 @@
 \usepackage[framemethod=TikZ]{mdframed}
 \usepackage{url}   % 网页链接
 \usepackage{subcaption} % 子标题
-\title{全国大学生数学建模竞赛编写的 \LaTeX{} 模板}
+\title{全国大学生数学建模竞赛编写的11 \LaTeX{} 模板}
 \tihao{A}
 \baominghao{4321}
 \schoolname{XX大学}
@@ -48,7 +48,7 @@ frametitlerulewidth=.5pt, frametitlebackgroundcolor=gray!2,]
 
 \uwave{关注我们的微信公众号}：
 
-\centerline{\includegraphics[width=6cm]{gongzhonghao2}}
+\centerline{\includegraphics[width=6cm]{figures/gongzhonghao2}}
 
 \keywords{\TeX{}\quad  图片\quad   表格\quad  公式}
 \end{abstract}
@@ -102,8 +102,8 @@ frametitlerulewidth=.5pt, frametitlebackgroundcolor=gray!2,]
         \begin{center}
             \begin{tabular}{cc}
                 \hline
-                \makebox[0.3\textwidth][c]{符号}	&  \makebox[0.4\textwidth][c]{意义} \\ \hline
-                D	    & 木条宽度（cm） \\ \hline
+                \makebox[0.3\textwidth][c]{符号}\t&  \makebox[0.4\textwidth][c]{意义} \\ \hline
+                D\t& 木条宽度（cm） \\ \hline
             \end{tabular}
         \end{center}
         \section{问题分析}
@@ -145,7 +145,7 @@ frametitlerulewidth=.5pt, frametitlebackgroundcolor=gray!2,]
 注意图片的命名，避免使用中文来命名图片，可以用英文与数字的组合来命名图片。避免使用\verb|1,2,3| 这样顺序的图片命名方式。图片多了，自己都不清楚那张图是什么了，命名尽量让它有意义。下面是一个插图的示例代码。
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=.6\textwidth]{smokeblk}
+    \includegraphics[width=.6\textwidth]{figures/smokeblk}
     \caption{电路图}
     \label{fig:circuit-diagram}
 \end{figure}
@@ -160,19 +160,19 @@ frametitlerulewidth=.5pt, frametitlebackgroundcolor=gray!2,]
     \centering
     \begin{minipage}[c]{0.3\textwidth}
         \centering
-        \includegraphics[width=0.95\textwidth]{f1}
+        \includegraphics[width=0.95\textwidth]{figures/f1}
         \subcaption{流程图}
         \label{fig:sample-figure-a}
     \end{minipage}
     \begin{minipage}[c]{0.3\textwidth}
         \centering
-        \includegraphics[width=0.95\textwidth]{f1}
+        \includegraphics[width=0.95\textwidth]{figures/f1}
         \subcaption{流程图}
         \label{fig:sample-figure-b}
     \end{minipage}
     \begin{minipage}[c]{0.3\textwidth}
         \centering
-        \includegraphics[width=0.95\textwidth]{f1}
+        \includegraphics[width=0.95\textwidth]{figures/f1}
         \subcaption{流程图}
         \label{fig:sample-figure-c}
     \end{minipage}
@@ -186,12 +186,12 @@ frametitlerulewidth=.5pt, frametitlebackgroundcolor=gray!2,]
     \centering
     \begin{minipage}[c]{0.48\textwidth}
         \centering
-        \includegraphics[height=0.2\textheight]{cat}
+        \includegraphics[height=0.2\textheight]{figures/cat}
         \subcaption{一只猫}
     \end{minipage}
     \begin{minipage}[c]{0.48\textwidth}
         \centering
-        \includegraphics[height=0.2\textheight]{smokeblk}
+        \includegraphics[height=0.2\textheight]{figures/smokeblk}
         \subcaption{电路图}
     \end{minipage}
     \caption{多图并排示例}
@@ -203,12 +203,10 @@ frametitlerulewidth=.5pt, frametitlebackgroundcolor=gray!2,]
     \caption{标准三线表格}\label{tab:001} \centering
     \begin{tabular}{ccccc}
         \toprule[1.5pt]
-        $D$(in) & $P_u$(lbs) & $u_u$(in) & $\beta$ & $G_f$(psi.in)\\
-        \midrule[1pt]
-        5 & 269.8 & 0.000674 & 1.79 & 0.04089\\
-        10 & 421.0 & 0.001035 & 3.59 & 0.04089\\
-        20 & 640.2 & 0.001565 & 7.18 & 0.04089\\
-        \bottomrule[1.5pt]
+        $D$(in) & $P_u$(lbs) & $u_u$(in) & $\beta$ & $G_f$(psi.in)\\ \midrule[1pt]
+        5 & 269.8 & 0.000674 & 1.79 & 0.04089\\ 
+        10 & 421.0 & 0.001035 & 3.59 & 0.04089\\ 
+        20 & 640.2 & 0.001565 & 7.18 & 0.04089\\ \bottomrule[1.5pt]
     \end{tabular}
 \end{table}
 
@@ -263,11 +261,11 @@ P & = UI \\
 \[
 \mathbf{X} = \left(
     \begin{array}{cccc}
-    x_{11} & x_{12} & \ldots & x_{1n}\\
-    x_{21} & x_{22} & \ldots & x_{2n}\\
-    \vdots & \vdots & \ddots & \vdots\\
-    x_{n1} & x_{n2} & \ldots & x_{nn}\\
-    \end{array} \right)
+x_{11} & x_{12} & \ldots & x_{1n}\\
+x_{21} & x_{22} & \ldots & x_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+x_{n1} & x_{n2} & \ldots & x_{nn}\\
+\end{array} \right)
 \]
 
 分段函数这些可以用 \verb|case| 环境，但是它要放在数学环境里面。
@@ -388,7 +386,7 @@ f(x) =
 
 如果想强调部分内容，可以使用加粗的手段来实现。加粗字体可以用 \verb|\textbf{加粗}| 来实现。例如： \textbf{这是加粗的字体。 This is bold fonts} 。
 
-中文字体没有斜体设计，但是英文字体有。\textit{斜体 Italics}。
+中文字体没有斜体设计，但是英文字体有。textit{斜体 Italics}。
 
 \section{参考文献与引用}
 
@@ -496,4 +494,4 @@ D=dd(1,:);
  \end{lstlisting}
 \end{appendices}
 
-\end{document} 
+\end{document}
